@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div{
+    margin: 30px auto;
+    width: 500px;
+}
+
+h2{
+    text-align: center;
+    margin: 20px 0;
+    color: skyblue;
+}
+
+p{
+    margin-left: 50px;
+}
+
+.object{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.red{
+    color: red;
+}

@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 200px;
+    height: auto;
+    margin: 30px auto;
+    border: 1px solid lightgray;
+    font-size: 13px;
+}
+
+img{
+    width: 100%;
+    margin: 20px 0px;
+}
+
+.product{
+    text-align: center;
+    font-weight: 300;
+}
+
+.price1, .price2{
+    color: red;
+    font-weight: bold;
+    padding-left: 5px;
+    margin: 3px 0;
+}
+
+.price1{
+    text-decoration: line-through;
+}
+
+.currency{
+    font-size: 10px;
+    text-decoration: underline;
+}
+
+.banner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner1,.banner2{
+    margin: 2px;
+    padding: 2px 5px;
+    font-weight: bold;
+    color: white;
+}
+
+.banner1{
+    background-color: rgb(16, 99, 16);
+}
+
+.banner2{
+    background-color: rgb(112, 177, 112);
+}

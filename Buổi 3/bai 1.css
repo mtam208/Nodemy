@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 500px;
+    margin: 30px auto;
+    border: 2px solid black;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    margin-left: 1px;
+}
+
+.subcontainer-1{
+    position: relative;
+}
+
+.a1{
+    position: absolute;
+    bottom: 4px;
+    background-color: springgreen;
+    font-size: 30px;
+    padding-left: 2px;
+    margin-left: 1px;
+}
+
+.subcontainer-2{
+    padding-left: 2px;
+    font-size: 30px;
+}
+
+.a2{
+    text-decoration: line-through;
+}
+
+.a3{
+    color: green;
+}

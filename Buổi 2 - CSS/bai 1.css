@@ -46,7 +46,10 @@ button{
     border-radius: 7px;
 }
 
+form button:hover{
+    background-color: blueviolet;
+}
+
 button:hover{
     cursor: pointer;
 }
-
