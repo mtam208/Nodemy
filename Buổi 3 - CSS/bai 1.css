@@ -20,7 +20,7 @@ img{
     position: relative;
 }
 
-.a1{
+.sale{
     position: absolute;
     bottom: 4px;
     background-color: springgreen;
@@ -34,10 +34,10 @@ img{
     font-size: 30px;
 }
 
-.a2{
+.old-price{
     text-decoration: line-through;
 }
 
-.a3{
+.new-price{
     color: green;
 }
