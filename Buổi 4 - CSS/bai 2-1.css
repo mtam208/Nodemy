@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #000;
+    margin: 10px auto;
+    width: 90%;
+}
+
+body>div{
+    border: 1px solid #000;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+}
+
+body div{
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.main{
+    display:flex;
+    flex-direction: row;
+    height: 250px;
+    line-height: 250px;
+}
+
+.index{
+    flex: 3;
+    border-right: 2px solid black;
+}
+
+.content{
+    flex: 7;
+}
+

@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    width: 90%;
+    margin: 10px auto;
+    /* border: 1px solid #000; */
+}
+
+.product{
+    width: 25%;
+    margin: 5px;
+    /* border: 1px solid #000; */
+}
+
+.photo{
+    position: relative;
+}
+
+img{
+    width: 100%;
+}
+
+.sticker{
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 5px;
+}
+
+.discount{
+    background-color: lightgreen;
+}
+
+.bonus{
+    background-color: slategrey;
+}
+
+.description p{
+    text-align: left;
+    margin: 5px;
+}
+
+.origin{
+    text-decoration: line-through;
+}
+
+.sale{
+    color: orange;
+}
+
+@media only screen and (max-width: 576px) {
+    .container{
+        flex-direction: column;
+    }
+    .product {
+      width: 100%;
+      border: 1px solid #000;
+    }
+  }
