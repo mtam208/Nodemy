@@ -1,69 +1,18 @@
 var arr = [1,5,7,8,9,15,8]
-var sum = 0
-var sum1 = 0
-var k = 0
-var product = 1
-var exist, result = false
 
-console.log("Các số chẵn của mảng là:");
-for (num of arr){
-    if (num % 2 == 0){
-        console.log(num)
-    }
-}
+console.log("Các số chẵn của mảng là: " + arr.filter(num => num%2 == 0));
 
-console.log("Các số lẻ của mảng là:");
-for (num of arr){
-    if (num % 2 != 0){
-        console.log(num);
-    }
-}
+console.log("Các số lẻ của mảng là: " + arr.filter(num => num%2 != 0));
 
-console.log("Các số lớn hơn hoặc bằng 5 của mảng là:");
-for (num of arr){
-    if (num >= 5){
-        console.log(num);
-    }
-}
+console.log("Các số lớn hơn hoặc bằng 5 của mảng là: " + arr.filter(num => num >= 5));
 
-console.log("Tổng các số chia hết cho 5 của mảng là:");
-for (num of arr){
-    if (num % 5 == 0){
-        sum += num
-    }
-}
-console.log(sum)
+var newArr = arr.filter(num => num%5 == 0)
+console.log("Tổng các số chia hết cho 5 của mảng là: " + newArr.reduce((sum, num) => sum + num, 0))
 
-console.log("Tích ba số đầu của mảng là:");
-for (i=0; i<3; i++){
-    product *= arr[i]
-}
-console.log(product);
+console.log("Tích 3 số đầu của mảng là: " + arr.slice(0,3).reduce((product, num) => product * num, 1))
 
-console.log("Tổng ba số cuối của mảng là:");
-for (i=arr.length-3; i<arr.length; i++){
-    sum1 += arr[i]
-}
-console.log(sum1)
+console.log("Tổng 3 số cuối của mảng là: " + arr.slice(arr.length-3,arr.length).reduce((sum, num) => sum + num, 0))
 
-console.log("Có số 5 trong mảng không?");
-for (num of arr){
-    if (num === 5){
-        exist = true
-        result = result || exist
-    }
-}
-if (result){
-    console.log("Có");
-}
-else{
-    console.log("Không có");
-}
+console.log(arr.find(num => num === 5) ? "Có số 5 trong mảng" : "Không có số 5 trong mảng" )
 
-console.log("Số phần tử bằng 8 trong mảng là:");
-for (num of arr){
-    if (num == 8){
-        k++ 
-    }
-}
-console.log(k);
+console.log("Có " + arr.filter(num => num === 8).length + " phần tử bằng 8 trong mảng");
